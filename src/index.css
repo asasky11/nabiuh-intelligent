@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #0f172a;
+  background: radial-gradient(circle at 10% 10%, #eef2ff 0%, #f7f9fc 35%, #f3f6fb 70%);
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 10%, #eef2ff 0%, #f7f9fc 35%, #f3f6fb 70%);
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #2b5be4;
+  background: linear-gradient(140deg, #2563eb, #1d4ed8);
+  color: #f8fafc;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: 0 12px 35px rgba(47, 110, 234, 0.28), 0 2px 8px rgba(0, 0, 0, 0.35);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(140deg, #3578ff, #2b60df);
+  border-color: #3b82f6;
+  box-shadow: 0 14px 40px rgba(53, 120, 255, 0.32), 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  border-radius: 0.65rem;
+  border: 1px solid #d9e2f0;
+  background: #f7f9fc;
+  color: #0f172a;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+  background: #fff;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.glass-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  box-shadow: 0 16px 50px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(6px);
+}
